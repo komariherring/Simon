@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		EE60AD4A1D92D746008B049A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE60AD491D92D746008B049A /* AppDelegate.swift */; };
 		EE60AD4C1D92D746008B049A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE60AD4B1D92D746008B049A /* ViewController.swift */; };
-		EE60AD4F1D92D746008B049A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD4D1D92D746008B049A /* Main.storyboard */; };
 		EE60AD511D92D746008B049A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD501D92D746008B049A /* Assets.xcassets */; };
 		EE60AD541D92D746008B049A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD521D92D746008B049A /* LaunchScreen.storyboard */; };
+		EE60AD5C1D92D7D4008B049A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD5B1D92D7D4008B049A /* Main.storyboard */; };
+		EE60AD621D92D7E0008B049A /* blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD5D1D92D7E0008B049A /* blue.mp3 */; };
+		EE60AD631D92D7E0008B049A /* green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD5E1D92D7E0008B049A /* green.mp3 */; };
+		EE60AD641D92D7E0008B049A /* loserSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD5F1D92D7E0008B049A /* loserSound.mp3 */; };
+		EE60AD651D92D7E0008B049A /* red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD601D92D7E0008B049A /* red.mp3 */; };
+		EE60AD661D92D7E0008B049A /* yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE60AD611D92D7E0008B049A /* yellow.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE60AD461D92D746008B049A /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE60AD491D92D746008B049A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE60AD4B1D92D746008B049A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE60AD4E1D92D746008B049A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE60AD501D92D746008B049A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE60AD531D92D746008B049A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE60AD551D92D746008B049A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE60AD5B1D92D7D4008B049A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EE60AD5D1D92D7E0008B049A /* blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blue.mp3; sourceTree = "<group>"; };
+		EE60AD5E1D92D7E0008B049A /* green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = green.mp3; sourceTree = "<group>"; };
+		EE60AD5F1D92D7E0008B049A /* loserSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loserSound.mp3; sourceTree = "<group>"; };
+		EE60AD601D92D7E0008B049A /* red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red.mp3; sourceTree = "<group>"; };
+		EE60AD611D92D7E0008B049A /* yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,11 @@
 			children = (
 				EE60AD481D92D746008B049A /* Simon */,
 				EE60AD471D92D746008B049A /* Products */,
+				EE60AD5D1D92D7E0008B049A /* blue.mp3 */,
+				EE60AD5E1D92D7E0008B049A /* green.mp3 */,
+				EE60AD5F1D92D7E0008B049A /* loserSound.mp3 */,
+				EE60AD601D92D7E0008B049A /* red.mp3 */,
+				EE60AD611D92D7E0008B049A /* yellow.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +71,7 @@
 			children = (
 				EE60AD491D92D746008B049A /* AppDelegate.swift */,
 				EE60AD4B1D92D746008B049A /* ViewController.swift */,
-				EE60AD4D1D92D746008B049A /* Main.storyboard */,
+				EE60AD5B1D92D7D4008B049A /* Main.storyboard */,
 				EE60AD501D92D746008B049A /* Assets.xcassets */,
 				EE60AD521D92D746008B049A /* LaunchScreen.storyboard */,
 				EE60AD551D92D746008B049A /* Info.plist */,
@@ -124,9 +139,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE60AD5C1D92D7D4008B049A /* Main.storyboard in Resources */,
 				EE60AD541D92D746008B049A /* LaunchScreen.storyboard in Resources */,
+				EE60AD641D92D7E0008B049A /* loserSound.mp3 in Resources */,
+				EE60AD651D92D7E0008B049A /* red.mp3 in Resources */,
+				EE60AD661D92D7E0008B049A /* yellow.mp3 in Resources */,
+				EE60AD631D92D7E0008B049A /* green.mp3 in Resources */,
+				EE60AD621D92D7E0008B049A /* blue.mp3 in Resources */,
 				EE60AD511D92D746008B049A /* Assets.xcassets in Resources */,
-				EE60AD4F1D92D746008B049A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,14 +165,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE60AD4D1D92D746008B049A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE60AD4E1D92D746008B049A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE60AD521D92D746008B049A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

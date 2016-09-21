@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP1-yN-sDg">
+                                <state key="normal" title="Start New Game"/>
+                                <connections>
+                                    <action selector="startGameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvg-ZC-88a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7f-aj-51V">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="48d-OC-NdZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="a85-EU-bRp"/>
+                                </constraints>
+                                <state key="normal" title="yellow">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvn-GO-ICp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zc9-nb-TJi">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SQj-yL-5W3"/>
+                                    <constraint firstAttribute="width" constant="100" id="wdt-HD-mXF"/>
+                                </constraints>
+                                <state key="normal" title="blue">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nad-yD-wcJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-T1-fY9">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7eo-iE-qzF"/>
+                                    <constraint firstAttribute="height" constant="100" id="ycG-VM-lpQ"/>
+                                </constraints>
+                                <state key="normal" title="green">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FNW-nm-Kqy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play Simon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-71-ToW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jY-QA-gdL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHu-jT-58w">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovK-o2-BP4">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="uK8-LU-8wJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="x3q-rb-rlK"/>
+                                </constraints>
+                                <state key="normal" title="red">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Th2-U6-iLd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YfH-T1-fY9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="1tG-db-dMG"/>
+                            <constraint firstItem="Zc9-nb-TJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="4Vf-Jq-ecg"/>
+                            <constraint firstItem="YfH-T1-fY9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="AsV-Lo-XFA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MP1-yN-sDg" secondAttribute="bottom" constant="20" id="Az1-yF-7dK"/>
+                            <constraint firstItem="8jY-QA-gdL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="D4Q-6k-U02"/>
+                            <constraint firstItem="8jY-QA-gdL" firstAttribute="top" secondItem="nHu-jT-58w" secondAttribute="bottom" constant="20" id="KKK-oK-OcL"/>
+                            <constraint firstItem="M7f-aj-51V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="TYm-f8-I29"/>
+                            <constraint firstItem="ovK-o2-BP4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="YVs-eu-TcB"/>
+                            <constraint firstItem="Zc9-nb-TJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="cBH-Ee-6qf"/>
+                            <constraint firstItem="rTq-71-ToW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eem-yj-cIV"/>
+                            <constraint firstItem="rTq-71-ToW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gE1-HO-fTZ"/>
+                            <constraint firstItem="ovK-o2-BP4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="hst-Pk-T9n"/>
+                            <constraint firstItem="8jY-QA-gdL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o4s-7L-VVd"/>
+                            <constraint firstItem="nHu-jT-58w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohZ-Pw-Gpa"/>
+                            <constraint firstItem="M7f-aj-51V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="tuP-qv-uL1"/>
+                            <constraint firstItem="MP1-yN-sDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMw-9i-RgM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueButton" destination="Zc9-nb-TJi" id="aq0-HD-pie"/>
+                        <outlet property="gameStatusLabel" destination="rTq-71-ToW" id="Ymk-ja-cmW"/>
+                        <outlet property="greenButton" destination="YfH-T1-fY9" id="S9X-UU-ckY"/>
+                        <outlet property="lastGameLabel" destination="nHu-jT-58w" id="z4s-yC-Z4F"/>
+                        <outlet property="redButton" destination="ovK-o2-BP4" id="VQZ-eo-pLv"/>
+                        <outlet property="scoreLabel" destination="8jY-QA-gdL" id="PkP-Sz-MQi"/>
+                        <outlet property="yellowButton" destination="M7f-aj-51V" id="L3d-wc-rXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
