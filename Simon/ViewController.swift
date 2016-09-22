@@ -28,7 +28,7 @@ class ViewController: UIViewController
     var isSimonsTurn = false
     var isPlayerTurn = false
     
-    enum colorInt: Int
+    enum ColorInt: Int
     {
         case redColor = 1
         case greenColor
@@ -37,9 +37,9 @@ class ViewController: UIViewController
         
     }
     
-    var playerChoice = [String]()
+    var playerChoice = [ColorInt]()
     
-    var computerChoice = [String]()
+    var computerChoice = [ColorInt]()
     
     var simonArray = [UIButton]()
     
@@ -84,7 +84,7 @@ class ViewController: UIViewController
     @IBAction func yellowTapped(_ sender: UIButton)
     {
         animateButtonPress(sender)
-        playerChoice.append("yellow")
+        playerChoice.append(.yellowColor)
         checkForLoser()
         theIndex = theIndex + 1
         if playerChoice.count == computerChoice.count
@@ -100,7 +100,7 @@ class ViewController: UIViewController
     @IBAction func blueTapped(_ sender: UIButton)
     {
         animateButtonPress(sender)
-        playerChoice.append("blue")
+        playerChoice.append(.blueColor)
         checkForLoser()
         theIndex = theIndex + 1
         
@@ -118,7 +118,7 @@ class ViewController: UIViewController
     @IBAction func redTapped(_ sender: UIButton)
     {
         animateButtonPress(sender)
-        playerChoice.append("red")
+        playerChoice.append(.redColor)
         checkForLoser()
         theIndex = theIndex + 1
         if playerChoice.count == computerChoice.count
@@ -138,7 +138,7 @@ class ViewController: UIViewController
     @IBAction func greenTapped(_ sender: UIButton)
     {
         animateButtonPress(sender)
-        playerChoice.append("green")
+        playerChoice.append(.greenColor)
         checkForLoser()
         theIndex = theIndex + 1
         if playerChoice.count == computerChoice.count
@@ -160,24 +160,24 @@ class ViewController: UIViewController
         {
             
             let newInt =  arc4random_uniform(4) + 1
-            var simonColor: colorInt
+            var simonColor: ColorInt
             switch newInt
             {
             case 1:
                 simonColor = .redColor
-                computerChoice.append("\(simonColor)")
+                computerChoice.append(simonColor)
                 simonArray.append(redButton)
             case 2:
                 simonColor = .greenColor
-                computerChoice.append("\(simonColor)")
+                computerChoice.append(simonColor)
                 simonArray.append(greenButton)
             case 3:
                 simonColor = .blueColor
-                computerChoice.append("\(simonColor)")
+                computerChoice.append(simonColor)
                 simonArray.append(blueButton)
             case 4:
                 simonColor = .yellowColor
-                computerChoice.append("\(simonColor)")
+                computerChoice.append(simonColor)
                 simonArray.append(yellowButton)
             default:
                 print("no color")
